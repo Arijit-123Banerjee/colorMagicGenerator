@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+
+  <body
+    class="h-screen w-full bg-gray-200 flex justify-center items-center flex-col"
+  >
+    <button class="absolute top-0 right-0 p-14 cursor-pointer" id="toggle"
+      >Dark Mode</button
+    >
+    <h1>Generate Random BackGround Color</h1>
+    <div class="hexValue">
+      <label class="text-gray-700 p-3 bg-white rounded-md"
+        >#
+        <input
+          type="text"
+          id="textField"
+          class="h-[4vh] mt-3 text-gray-500 p-2 rounded-md outline-none"
+          placeholder="Enter Your Hex value..."
+        />
+      </label>
+
+      <button class="p-3 ml-3 bg-gray-400 rounded-md" id="copyHex">copy</button>
+    </div>
+    <button
+      id="changeBtn"
+      class="bg-cyan-300 mt-3 p-2 rounded-md hover:shadow-2xl hover:shadow-cyan-500/45"
+      >Change Color</button
+    >
+    <script src="script.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </body>
+</html>
